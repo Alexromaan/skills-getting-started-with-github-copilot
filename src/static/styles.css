@@ -90,15 +90,40 @@ section h3 {
 
 .participants-list {
   margin-top: 6px;
-  padding-left: 20px;
+  padding-left: 0;
+  list-style: none; /* hide bullets */
 }
 
 .participants-list li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   padding: 6px 10px;
   background-color: #f0f7ff;
   border: 1px solid #dbe9ff;
   border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participant-email {
+  word-break: break-all;
+  color: #0b3d91;
+}
+
+.remove-participant {
+  border: none;
+  background: transparent;
+  color: #c62828;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.remove-participant:hover {
+  background-color: rgba(198,40,40,0.08);
+  color: #b71c1c;
 }
 
 .no-participants {
